@@ -36,7 +36,16 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="h-[60px] md:h-[88px] sticky top-0 z-50 bg-[#FFFFFF1A] border-b border-[#F0F0F0] backdrop-blur-3xl">
+    <header
+      className="h-[60px] md:h-[88px] sticky top-0 z-50 bg-[#FFFFFF1A] border-b border-[#F0F0F0] backdrop-blur-3xl w-full"
+      style={{
+        position: 'sticky',
+        top: 0,
+        zIndex: 50,
+        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+        backdropFilter: 'blur(48px)',
+      }}
+    >
       <div className="lg:w-[1240px] mx-auto px-4 flex items-center justify-between h-full">
         {/* Logo */}
         <Link href="/">

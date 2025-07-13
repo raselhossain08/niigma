@@ -12,7 +12,7 @@ import Autoplay from 'embla-carousel-autoplay';
 import { useCallback, useEffect, useState } from 'react';
 
 const autoplayOptions = {
-  delay: 1500,
+  delay: 3000,
   stopOnInteraction: false,
   stopOnMouseEnter: true,
 };
@@ -36,7 +36,7 @@ export function HeroCarousel() {
         align: 'start',
         loop: true,
       }}
-
+      plugins={[plugin.current]}
       className="w-full"
       setApi={(api) => {
         if (api) {

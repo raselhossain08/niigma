@@ -12,13 +12,15 @@ export default function Home() {
   useScrollToHash();
 
   return (
-    <div className="overflow-hidden">
+    <div className="">
       <Header />
-      <HeroSection />
-      <WhyNiigma />
-      <FeaturesSection />
-      <Trivia />
-      <Corporate />
+      <div className="overflow-hidden">
+        <HeroSection />
+        <WhyNiigma />
+        <FeaturesSection />
+        <Trivia />
+        <Corporate />
+      </div>
     </div>
   );
 }

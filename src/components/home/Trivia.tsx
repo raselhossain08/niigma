@@ -1,9 +1,19 @@
+"use client"
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { EarlyAccessModal } from '../common/EarlyAccessModal';
 
 export default function Trivia() {
+    useEffect(() => {
+      if (!document.querySelector('script[src*="tally.so/widgets/embed.js"]')) {
+        const script = document.createElement('script');
+        script.src = 'https://tally.so/widgets/embed.js';
+        script.async = true;
+        document.body.appendChild(script);
+      }
+    }, []);
+  
   return (
     <div className="pt-16" id="trivia">
       <div className="w-full lg:w-[1240px] mx-auto relative z-10 px-5 lg:px-0">
@@ -14,7 +24,7 @@ export default function Trivia() {
             data-aos-delay="100"
           >
             <Image
-              src="/img/trivia/1.svg"
+              src="/img/trivia/1.png"
               width={536.07}
               height={659.87}
               alt="Trivia"
@@ -52,13 +62,17 @@ export default function Trivia() {
               Why just track health when you can play your way to better habits?
             </h3>
             <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-4">
-              <EarlyAccessModal
-                trigger={
-                  <span className=" font-bold text-16 leading-[30px] underline text-black cursor-pointer hover:text-cs1 transition-colors">
-                    Join Beta.
-                  </span>
-                }
-              />
+              <button
+                data-tally-open="nr96xL" // Replace with your real form ID
+                data-tally-layout="modal"
+                data-tally-emoji-text="👋"
+                data-tally-emoji-animation="wave"
+                data-tally-form-events-forwarding="1"
+                className="font-bold text-16 leading-[30px] underline text-black cursor-pointer hover:text-cs1 transition-colors"
+              >
+                Join Beta
+              </button>
+
               <p className=" font-bold text-16 leading-[30px]  text-black">
                 Be one of the first to meet Nimbus.
               </p>

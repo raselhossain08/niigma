@@ -26,9 +26,30 @@ export function HeroSection() {
               data-aos-delay="200"
             >
               <div className="flex -space-x-2">
-                <div className="w-7 h-7 bg-[#D9D9D9] rounded-full border border-white" />
-                <div className="w-7 h-7 bg-[#D9D9D9] rounded-full border border-white" />
-                <div className="w-7 h-7 bg-[#D9D9D9] rounded-full border border-white" />
+                <div className="w-7 h-7 bg-[#D9D9D9] rounded-full border border-white">
+                  <Image
+                    src="/img/avatar/1.png"
+                    width={32}
+                    height={32}
+                    alt=""
+                  />
+                </div>
+                <div className="w-7 h-7 bg-[#D9D9D9] rounded-full border border-white">
+                  <Image
+                    src="/img/avatar/2.png"
+                    width={32}
+                    height={32}
+                    alt=""
+                  />
+                </div>
+                <div className="w-7 h-7 bg-[#D9D9D9] rounded-full border border-white">
+                  <Image
+                    src="/img/avatar/3.png"
+                    width={32}
+                    height={32}
+                    alt=""
+                  />
+                </div>
               </div>
               <p className="text-16 font-medium text-[#1F1F1F]">
                 2500+ beta registrations – Join the movement
@@ -51,8 +72,8 @@ export function HeroSection() {
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              <WaitlistModal />
               <EarlyAccessModal />
+              <WaitlistModal />
             </div>
           </div>
           <div
