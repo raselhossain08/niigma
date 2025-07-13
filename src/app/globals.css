@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -228,4 +233,7 @@
 
 *{
   font-family:var(--font-inter);
+}
+button{
+  cursor: pointer;
 }

@@ -1,22 +1,36 @@
 // app/components/Navbar.tsx
-"use client";
+'use client';
 
-import { useState } from "react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
-import Image from "next/image";
-import { MdOutlineMenu } from "react-icons/md";
+import { useState } from 'react';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Menu } from 'lucide-react';
+import Image from 'next/image';
+import { MdOutlineMenu } from 'react-icons/md';
+import { EarlyAccessModal } from './EarlyAccessModal';
+import { WaitlistModal } from './WaitlistModal';
+import { scrollToElement } from '@/lib/scrollUtils';
 
 const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/how-it-works", label: "How It Works" },
-  { href: "/features", label: "Features" },
-  { href: "/corporate", label: "Corporate" },
-  { href: "/terms-and-conditions", label: "Terms and Conditions" },
-  { href: "/blog", label: "Blog" },
+  { href: '/#home', label: 'Home' },
+  { href: '/#how-it-works', label: 'How It Works' },
+  { href: '/#features', label: 'Features' },
+  { href: '/#corporate', label: 'Corporate' },
+  { href: '/terms-and-conditions', label: 'Terms and Conditions' },
+  { href: '/blog', label: 'Blog' },
 ];
+
+const handleSmoothScroll = (
+  e: React.MouseEvent<HTMLAnchorElement>,
+  href: string
+) => {
+  if (href.startsWith('/#')) {
+    e.preventDefault();
+    const targetId = href.substring(2); // Remove '/#'
+    scrollToElement(targetId, 88);
+  }
+};
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,6 +55,7 @@ export function Header() {
             <Link
               key={item.label}
               href={item.href}
+              onClick={(e) => handleSmoothScroll(e, item.href)}
               className="hover:text-cs1 transition-colors duration-200"
             >
               {item.label}
@@ -50,15 +65,8 @@ export function Header() {
 
         {/* Desktop Buttons */}
         <div className="hidden lg:flex items-center space-x-3">
-          <Button
-            variant="outline"
-            className="w-[152px] h-[56px] font-semibold text-16 rounded-full border-cs1 text-cs1 hover:bg-blue-50 transition-colors duration-200"
-          >
-            Join Waitlist
-          </Button>
-          <Button className="w-[152px] h-[56px] font-semibold text-16 rounded-full bg-cs1 hover:bg-cs1 transition-colors duration-200 text-white">
-            Join Beta
-          </Button>
+          <WaitlistModal />
+          <EarlyAccessModal />
         </div>
 
         {/* Mobile Menu Trigger */}
@@ -77,21 +85,17 @@ export function Header() {
                 <Link
                   key={item.label}
                   href={item.href}
+                  onClick={(e) => {
+                    handleSmoothScroll(e, item.href);
+                    setIsOpen(false);
+                  }}
                   className="text-gray-600 hover:text-blue-600 transition-colors duration-200 py-2"
-                  onClick={() => setIsOpen(false)}
                 >
                   {item.label}
                 </Link>
               ))}
-              <Button
-                variant="outline"
-                className="w-full h-[56px] font-semibold text-16 rounded-full border-cs1 text-cs1 hover:bg-blue-50 transition-colors duration-200"
-              >
-                Join Waitlist
-              </Button>
-              <Button className="w-full h-[56px] font-semibold text-16 rounded-full bg-cs1 hover:bg-cs1 transition-colors duration-200 text-white">
-                Join Beta
-              </Button>
+              <WaitlistModal className="w-full" />
+              <EarlyAccessModal className="w-full" />
             </nav>
           </SheetContent>
         </Sheet>

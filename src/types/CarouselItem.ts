@@ -1,6 +1,6 @@
 // app/types/CarouselItem.ts
 
-import { StaticImageData } from "next/image";
+import { StaticImageData } from 'next/image';
 
 export interface CarouselItemData {
   id: number;
@@ -23,6 +23,7 @@ export interface CarouselItemData {
     right?: string;
     bottom?: string;
     top?: string;
+    cls?: string; // Optional class for additional styling
   };
   bottomRightImage?: {
     src: string | StaticImageData;
@@ -33,6 +34,7 @@ export interface CarouselItemData {
     right?: string;
     bottom?: string;
     top?: string;
+    cls?: string;
   };
   topLeftArrow?: {
     src: string | StaticImageData;
@@ -43,6 +45,7 @@ export interface CarouselItemData {
     right?: string;
     bottom?: string;
     top?: string;
+    cls?: string;
   };
   bottomRightArrow?: {
     src: string | StaticImageData;
@@ -53,6 +56,7 @@ export interface CarouselItemData {
     right?: string;
     bottom?: string;
     top?: string;
+    cls?: string;
   };
 }
 
@@ -61,165 +65,181 @@ export const carouselItemData: CarouselItemData[] = [
   {
     id: 0,
     mainImage: {
-      src: "/img/hero/1.png",
+      src: '/img/hero/1.png',
       width: 394.04,
       height: 611.81,
-      alt: "",
+      alt: '',
     },
     topLeftImage: {
-      src: "/img/hero/slide/1.svg",
+      src: '/img/hero/slide/1.svg',
       width: 221.61,
       height: 78,
-      alt: "",
-      top: "top-24",
-      left: "left-14",
+      alt: '',
+      top: 'top-12 sm:top-20',
+      left: ' left-[-60px] sm:-left-[80px]',
+      cls: 'w-[150px] h-auto sm:w-[221.61px] ', 
     },
     bottomRightImage: {
-      src: "/img/hero/slide/2.svg",
+      src: '/img/hero/slide/2.svg',
       width: 221.61,
       height: 78,
-      alt: "",
-      bottom: "bottom-20",
-      right: "right-10",
+      alt: '',
+      bottom: 'bottom-[30px] sm:bottom-[50px]',
+      right: 'right-[-50px] sm:right-[-50px] ',
+      cls: 'w-[150px] h-auto sm:w-[221.61px] ', 
     },
     topLeftArrow: {
-      src: "/img/hero/arrowLeft.svg",
+      src: '/img/hero/arrowLeft.svg',
       width: 82.91,
       height: 34.67,
-      alt: "",
-      top: "top-54",
-      left: "left-32",
+      alt: '',
+      top: 'top-[130px] sm:top-[200px]',
+      left: '-left-2 sm:-left-4',
+      cls: 'w-[50px] h-auto sm:w-[82.91px] ',
     },
     bottomRightArrow: {
-      src: "/img/hero/arrowRight.svg",
+      src: '/img/hero/arrowRight.svg',
       width: 82.91,
       height: 34.67,
-      alt: "",
-      bottom: "bottom-44",
-      right: "right-20",
+      alt: '',
+      bottom: 'bottom-[98px] sm:bottom-[160px]',
+      right: '-right-3 sm:right-[4px]',
+      cls: 'w-[50px] h-auto sm:w-[82.91px] ',
     },
   },
   {
     id: 1,
     mainImage: {
-      src: "/img/hero/2.png",
+      src: '/img/hero/2.png',
       width: 394.04,
       height: 611.81,
-      alt: "",
+      alt: '',
     },
     topLeftImage: {
-      src: "/img/hero/slide/3.svg",
+      src: '/img/hero/slide/3.svg',
       width: 221.61,
       height: 78,
-      alt: "",
-      top: "top-24",
-      left: "left-10",
+      alt: '',
+      top: 'top-12 sm:top-20',
+      left: ' left-[-60px] sm:-left-[80px]',
+      cls: 'w-[150px] h-auto sm:w-[221.61px] ', 
     },
     bottomRightImage: {
-      src: "/img/hero/slide/4.svg",
+      src: '/img/hero/slide/4.svg',
       width: 221.61,
       height: 78,
-      alt: "",
-      bottom: "bottom-7",
-      right: "right-5",
+      alt: '',
+      bottom: 'bottom-[30px] sm:bottom-[50px]',
+      right: 'right-[-50px] sm:right-[-50px] ',
+      cls: 'w-[150px] h-auto sm:w-[221.61px] ', 
     },
     topLeftArrow: {
-      src: "/img/hero/arrowLeft.svg",
+      src: '/img/hero/arrowLeft.svg',
       width: 82.91,
       height: 34.67,
-      alt: "",
-      top: "top-50",
-      left: "left-32",
+      alt: '',
+      top: 'top-[130px] sm:top-[200px]',
+      left: '-left-2 sm:-left-4',
+      cls: 'w-[50px] h-auto sm:w-[82.91px] ',
     },
     bottomRightArrow: {
-      src: "/img/hero/arrowRight.svg",
+      src: '/img/hero/arrowRight.svg',
       width: 82.91,
       height: 34.67,
-      alt: "",
-      bottom: "bottom-40",
-      right: "right-20",
+      alt: '',
+      bottom: 'bottom-[98px] sm:bottom-[160px]',
+      right: '-right-3 sm:right-[4px]',
+      cls: 'w-[50px] h-auto sm:w-[82.91px] ',
     },
   },
   {
     id: 2,
     mainImage: {
-      src: "/img/hero/3.png",
+      src: '/img/hero/3.png',
       width: 394.04,
       height: 611.81,
-      alt: "",
+      alt: '',
     },
     topLeftImage: {
-      src: "/img/hero/slide/5.svg",
+      src: '/img/hero/slide/5.svg',
       width: 221.61,
       height: 78,
-      alt: "",
-      top: "top-24",
-      left: "left-10",
+      alt: '',
+      top: 'top-12 sm:top-20',
+      left: 'left-[-60px] sm:-left-[80px]',
+      cls: 'w-[150px] h-auto sm:w-[221.61px] ', 
     },
     bottomRightImage: {
-      src: "/img/hero/slide/6.svg",
+      src: '/img/hero/slide/6.svg',
       width: 221.61,
       height: 78,
-      alt: "",
-      bottom: "bottom-12",
-      right: "right-5",
+      alt: '',
+      bottom: 'bottom-[30px] sm:bottom-[50px]',
+      right: 'right-[-50px] sm:right-[-50px] ',
+      cls: 'w-[150px] h-auto sm:w-[221.61px] ', 
     },
     topLeftArrow: {
-      src: "/img/hero/arrowLeft.svg",
+      src: '/img/hero/arrowLeft.svg',
       width: 82.91,
       height: 34.67,
-      alt: "",
-      top: "top-50",
-      left: "left-32",
+      alt: '',
+      top: 'top-[130px] sm:top-[200px]',
+      left: '-left-2 sm:-left-4',
+      cls: 'w-[50px] h-auto sm:w-[82.91px] ',
     },
     bottomRightArrow: {
-      src: "/img/hero/arrowRight.svg",
+      src: '/img/hero/arrowRight.svg',
       width: 82.91,
       height: 34.67,
-      alt: "",
-      bottom: "bottom-40",
-      right: "right-20",
+      alt: '',
+      bottom: 'bottom-[98px] sm:bottom-[160px]',
+      right: '-right-3 sm:right-[4px]',
+      cls: 'w-[50px] h-auto sm:w-[82.91px] ',
     },
   },
   {
     id: 3,
     mainImage: {
-      src: "/img/hero/4.png",
+      src: '/img/hero/4.png',
       width: 394.04,
       height: 611.81,
-      alt: "",
+      alt: '',
     },
     topLeftImage: {
-      src: "/img/hero/slide/7.svg",
+      src: '/img/hero/slide/7.svg',
       width: 221.61,
       height: 78,
-      alt: "",
-      top: "top-24",
-      left: "left-10",
+      alt: '',
+      top: 'top-12 sm:top-20',
+      left: ' left-[-60px] sm:-left-[80px]',
+      cls: 'w-[150px] h-auto sm:w-[221.61px] ', 
     },
     bottomRightImage: {
-      src: "/img/hero/slide/8.svg",
+      src: '/img/hero/slide/8.svg',
       width: 221.61,
       height: 78,
-      alt: "",
-      bottom: "bottom-12",
-      right: "right-5",
+      alt: '',
+      bottom: 'bottom-[30px] sm:bottom-[50px]',
+      right: 'right-[-50px] sm:right-[-50px] ',
+      cls: 'w-[150px] h-auto sm:w-[221.61px] ', 
     },
     topLeftArrow: {
-      src: "/img/hero/arrowLeft.svg",
+      src: '/img/hero/arrowLeft.svg',
       width: 82.91,
       height: 34.67,
-      alt: "",
-      top: "top-60",
-      left: "left-28",
+      alt: '',
+      top: 'top-[130px] sm:top-[200px]',
+      left: '-left-2 sm:-left-4',
+      cls: 'w-[50px] h-auto sm:w-[82.91px] ',
     },
     bottomRightArrow: {
-      src: "/img/hero/arrowRight.svg",
+      src: '/img/hero/arrowRight.svg',
       width: 82.91,
       height: 34.67,
-      alt: "",
-      bottom: "bottom-45",
-      right: "right-20",
+      alt: '',
+      bottom: 'bottom-[98px] sm:bottom-[160px]',
+      right: '-right-3 sm:right-[4px]',
+      cls: 'w-[50px] h-auto sm:w-[82.91px] ',
     },
   },
 ];

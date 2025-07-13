@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import * as React from "react";
+import * as React from 'react';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
-import Image from "next/image";
-import { carouselItemData } from "@/types/CarouselItem";
-import Autoplay from "embla-carousel-autoplay";
-import { useCallback, useEffect, useState } from "react";
+} from '@/components/ui/carousel';
+import Image from 'next/image';
+import { carouselItemData } from '@/types/CarouselItem';
+import Autoplay from 'embla-carousel-autoplay';
+import { useCallback, useEffect, useState } from 'react';
 
 const autoplayOptions = {
   delay: 1500,
@@ -33,14 +33,14 @@ export function HeroCarousel() {
   return (
     <Carousel
       opts={{
-        align: "start",
+        align: 'start',
         loop: true,
       }}
-      plugins={[plugin.current]}
+
       className="w-full"
       setApi={(api) => {
         if (api) {
-          api.on("select", () => handleSelect(api));
+          api.on('select', () => handleSelect(api));
           // Set initial active index
           setActiveIndex(api.selectedScrollSnap());
         }
@@ -50,67 +50,87 @@ export function HeroCarousel() {
         {carouselItemData.map((item, index) => (
           <CarouselItem
             key={index}
-            className="w-full flex justify-end relative pr-20"
+            className="w-full flex justify-center lg:justify-end  lg:pr-20"
           >
-            <div className="p-1">
+            <div className="p-1 relative">
               <Image
                 src={item.mainImage.src}
                 width={item.mainImage.width}
                 height={item.mainImage.height}
                 alt={item.mainImage.alt}
-                className={`transition-opacity duration-300 ${
-                  activeIndex === index ? "opacity-100" : "opacity-0"
+                className={`w-[227.35px] h-[353px] sm:w-[394.04px] sm:h-[611.81px] transition-opacity duration-300 ${
+                  activeIndex === index ? 'opacity-100' : 'opacity-0'
                 }`}
               />
+
+              {item.topLeftImage && (
+                <div
+                  className={`absolute ${item.topLeftImage.top} ${
+                    item.topLeftImage.left
+                  } ${
+                    isAnimating && activeIndex === index
+                      ? 'animate-fade-up'
+                      : ''
+                  }`}
+                >
+                  <Image
+                    {...item.topLeftImage}
+                    className={`${item.topLeftImage.cls}`}
+                  />
+                </div>
+              )}
+
+              {item.bottomRightImage && (
+                <div
+                  className={`absolute ${item.bottomRightImage.bottom} ${
+                    item.bottomRightImage.right
+                  } ${
+                    isAnimating && activeIndex === index
+                      ? 'animate-fade-up'
+                      : ''
+                  }`}
+                >
+                  <Image
+                    {...item.bottomRightImage}
+                    className={`${item.bottomRightImage.cls}`}
+                  />
+                </div>
+              )}
+
+              {item.topLeftArrow && (
+                <div
+                  className={`absolute ${item.topLeftArrow.top} ${
+                    item.topLeftArrow.left
+                  } ${
+                    isAnimating && activeIndex === index
+                      ? 'animate-fade-up'
+                      : ''
+                  }`}
+                >
+                  <Image
+                    {...item.topLeftArrow}
+                    className={`${item.topLeftArrow.cls}`}
+                  />
+                </div>
+              )}
+
+              {item.bottomRightArrow && (
+                <div
+                  className={`absolute ${item.bottomRightArrow.bottom} ${
+                    item.bottomRightArrow.right
+                  } ${
+                    isAnimating && activeIndex === index
+                      ? 'animate-fade-up'
+                      : ''
+                  }`}
+                >
+                  <Image
+                    {...item.bottomRightArrow}
+                    className={`${item.bottomRightArrow.cls}`}
+                  />
+                </div>
+              )}
             </div>
-
-            {item.topLeftImage && (
-              <div
-                className={`absolute ${item.topLeftImage.top} ${
-                  item.topLeftImage.left
-                } ${
-                  isAnimating && activeIndex === index ? "animate-fade-up" : ""
-                }`}
-              >
-                <Image {...item.topLeftImage} />
-              </div>
-            )}
-
-            {item.bottomRightImage && (
-              <div
-                className={`absolute ${item.bottomRightImage.bottom} ${
-                  item.bottomRightImage.right
-                } ${
-                  isAnimating && activeIndex === index ? "animate-fade-up" : ""
-                }`}
-              >
-                <Image {...item.bottomRightImage} />
-              </div>
-            )}
-
-            {item.topLeftArrow && (
-              <div
-                className={`absolute ${item.topLeftArrow.top} ${
-                  item.topLeftArrow.left
-                } ${
-                  isAnimating && activeIndex === index ? "animate-fade-up" : ""
-                }`}
-              >
-                <Image {...item.topLeftArrow} />
-              </div>
-            )}
-
-            {item.bottomRightArrow && (
-              <div
-                className={`absolute ${item.bottomRightArrow.bottom} ${
-                  item.bottomRightArrow.right
-                } ${
-                  isAnimating && activeIndex === index ? "animate-fade-up" : ""
-                }`}
-              >
-                <Image {...item.bottomRightArrow} />
-              </div>
-            )}
           </CarouselItem>
         ))}
       </CarouselContent>
