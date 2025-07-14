@@ -26,8 +26,7 @@ export function HeroCarousel() {
     if (!api) return;
     setActiveIndex(api.selectedScrollSnap());
     setIsAnimating(true);
-    // Reset animation for next slide
-    setTimeout(() => setIsAnimating(false), 600); // Match this with your animation duration
+    setTimeout(() => setIsAnimating(false), 600); 
   }, []);
 
   return (
@@ -93,40 +92,6 @@ export function HeroCarousel() {
                   <Image
                     {...item.bottomRightImage}
                     className={`${item.bottomRightImage.cls}`}
-                  />
-                </div>
-              )}
-
-              {item.topLeftArrow && (
-                <div
-                  className={`absolute ${item.topLeftArrow.top} ${
-                    item.topLeftArrow.left
-                  } ${
-                    isAnimating && activeIndex === index
-                      ? 'animate-fade-up'
-                      : ''
-                  }`}
-                >
-                  <Image
-                    {...item.topLeftArrow}
-                    className={`${item.topLeftArrow.cls}`}
-                  />
-                </div>
-              )}
-
-              {item.bottomRightArrow && (
-                <div
-                  className={`absolute ${item.bottomRightArrow.bottom} ${
-                    item.bottomRightArrow.right
-                  } ${
-                    isAnimating && activeIndex === index
-                      ? 'animate-fade-up'
-                      : ''
-                  }`}
-                >
-                  <Image
-                    {...item.bottomRightArrow}
-                    className={`${item.bottomRightArrow.cls}`}
                   />
                 </div>
               )}

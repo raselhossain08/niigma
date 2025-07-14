@@ -94,18 +94,72 @@ export default function FeaturesSection() {
           </p>
         </div>
         <div className="flex items-center justify-between flex-wrap lg:flex-nowrap">
-          <div className="w-full lg:w-[501px] py-8 lg:py-0 flex justify-center lg:justify-start">
-            <Image
-              src="/img/feature/1.svg"
-              alt="Feature 1"
-              width={501}
-              height={448}
-              className=""
-            />
+          <div
+            className="w-full lg:w-[501px] py-8 lg:py-0 flex justify-center flex-col"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
+            <div className="flex w-full items-start justify-between  relative">
+              <Image
+                src="/img/feature/3.svg"
+                alt="Feature Image"
+                width={245.94}
+                height={205}
+                className="w-[245.94px]"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              />
+              <Image
+                src="/img/feature/4.svg"
+                alt="Feature Image"
+                width={225.06}
+                height={205}
+                className="w-[225.06] h-auto"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              />
+            </div>
+            <div className="  flex items-center justify-center ps-12">
+              <p
+                className="text-center text-[#0BA7E3] font-bold text-26"
+                data-aos="zoom-in"
+                data-aos-delay="700"
+              >
+                niiGma
+              </p>
+            </div>
+            <div className="flex w-full items-end justify-between ">
+              <Image
+                src="/img/feature/5.svg"
+                alt="Feature Image"
+                width={268.94}
+                height={205}
+                className="w-[268.94] h-auto"
+                data-aos="fade-up"
+                data-aos-delay="800"
+              />
+              <Image
+                src="/img/feature/6.svg"
+                alt="Feature Image"
+                width={222}
+                height={205}
+                className="w-[222px] h-auto"
+                data-aos="fade-up"
+                data-aos-delay="900"
+              />
+            </div>
           </div>
-          <div className="w-full lg:w-[593px] py-8 lg:py-0">
-            <h3 className=" text-center font-inter font-bold text-25 leading-[150%] text-[#1F1F1F] mb-4">
-              Meet Maya’s Case Study
+          <div
+            className="w-full lg:w-[593px] py-8 lg:py-0"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
+            <h3
+              className=" text-center font-inter font-bold text-25 leading-[150%] text-[#1F1F1F] mb-4"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              Meet Maya's Case Study
             </h3>
             <div className="flex justify-between items-start pt-3">
               <div className="w-[47%] lg:w-[250px] flex flex-col items-center justify-center ">
@@ -115,6 +169,8 @@ export default function FeaturesSection() {
                   width={134}
                   height={134}
                   className=""
+                  data-aos="zoom-in"
+                  data-aos-delay="700"
                 />
                 <div className="flex flex-col items-center  pt-4 w-full">
                   {steps.map((step, index) => (
@@ -159,12 +215,20 @@ export default function FeaturesSection() {
                   ))}
                 </div>
               </div>
-              <div className="w-[47%] lg:w-[300px] pt-3 lg:pt-0">
-                <div className="lg:h-[147px]">
-                  <p className="font-semibold text-[10.95px] lg:text-lg">
+              <div
+                className="w-[47%] lg:w-[300px] pt-3 lg:pt-0"
+                data-aos="fade-up"
+                data-aos-delay="800"
+              >
+                <div
+                  className="h-[120px] lg:h-[147px] mt-5"
+                  data-aos="fade-up"
+                  data-aos-delay="850"
+                >
+                  <p className="font-semibold text-[10.95px] lg:text-lg mb-[5px]">
                     Maya
                   </p>
-                  <p className="text-[9.86px] font-inter font-medium lg:text-18">
+                  <p className="text-[9.86px] font-inter font-medium lg:text-18 mb-1">
                     Age: 27
                   </p>
                   <p className="font-inter font-[600] text-[9.86px] lg:text-18">
@@ -172,7 +236,11 @@ export default function FeaturesSection() {
                     <span className="text-black">Late luteal</span>
                   </p>
                 </div>
-                <div className="lg:h-[80px] py-4 lg:py-0">
+                <div
+                  className="lg:h-[80px] py-4 lg:pt-0 lg:pb-5 "
+                  data-aos="fade-up"
+                  data-aos-delay="950"
+                >
                   <h3 className="text-[10.95px] font-bold lg:text-20 lg:leading-[150%]">
                     OvuNova detects luteal phase
                   </h3>
@@ -185,10 +253,16 @@ export default function FeaturesSection() {
                   alt="Arrow"
                   width={24}
                   height={24}
-                  className="mt-2 h-[25px] lg:h-[34px]  last:h-[54px] my-5"
+                  className="mt-2 h-[25px] lg:h-[34px]  last:h-[54px] my-6 "
+                  data-aos="fade-right"
+                  data-aos-delay="900"
                 />
 
-                <div className="lg:h-[80px]">
+                <div
+                  className="lg:h-[80px] mt-10 lg:mt-0 lg:mb-5"
+                  data-aos="fade-up"
+                  data-aos-delay="1050"
+                >
                   <h3 className="text-[10.95px]  font-bold lg:text-20 leading-[150%]">
                     MoodMana
                   </h3>
@@ -202,17 +276,29 @@ export default function FeaturesSection() {
                   width={24}
                   height={24}
                   className="my-5 h-[25px] lg:h-[34px]  last:h-[54px]"
+                  data-aos="fade-right"
+                  data-aos-delay="1000"
                 />
 
-                <div className=" flex items-center space-x-4  w-full">
+                <div
+                  className=" flex items-center space-x-4  w-full"
+                  data-aos="fade-up"
+                  data-aos-delay="1100"
+                >
                   <Image
                     src="/icons/feature5.svg"
                     alt="Arrow"
                     width={75}
                     height={75}
-                    className="mt-2 w-[41.08px] h-auto lg:w-[75] lg:h-[75px]  "
+                    className="mt-2 w-[41.08px] h-auto lg:w-[75] lg:h-[75px]"
+                    data-aos="zoom-in"
+                    data-aos-delay="1200"
                   />
-                  <div className=" w-[240px]">
+                  <div
+                    className=" w-[240px]"
+                    data-aos="fade-left"
+                    data-aos-delay="1250"
+                  >
                     <h3 className="font-bold text-[10.95px] lg:text-20 leading-[150%]">
                       Detects cycle related pattern
                     </h3>
@@ -226,17 +312,29 @@ export default function FeaturesSection() {
                   alt="Arrow"
                   width={24}
                   height={24}
-                  className="my-5 h-[25px] lg:h-[34px]"
+                  className="mt-5 mb-5 lg:my-5 h-[25px] lg:h-[34px]"
+                  data-aos="fade-right"
+                  data-aos-delay="1300"
                 />
-                <div className=" flex items-center space-x-4 w-full">
+                <div
+                  className=" flex items-center space-x-4 w-full"
+                  data-aos="fade-up"
+                  data-aos-delay="1400"
+                >
                   <Image
                     src="/icons/feature6.svg"
                     alt="Arrow"
                     width={32}
                     height={32}
-                    className="mt-2 h-[32px]  "
+                    className="mt-2 h-[32px]"
+                    data-aos="zoom-in"
+                    data-aos-delay="1500"
                   />
-                  <div className=" w-[240px]">
+                  <div
+                    className=" w-[240px]"
+                    data-aos="fade-left"
+                    data-aos-delay="1550"
+                  >
                     <h3 className="font-bold text-[10.95px] lg:text-20 leading-[150%]">
                       Maya feels seen
                     </h3>
@@ -251,14 +349,22 @@ export default function FeaturesSection() {
           </div>
         </div>
         <div className="flex items-center justify-center pt-12">
-          <p className="text-[#1F1F1F] font-inter font-medium text-16 lg:text-24 text-center lg:leading-[36px] lg:w-[845px] mx-auto w-full">
+          <p
+            className="text-[#1F1F1F] font-inter font-medium text-16 lg:text-24 text-center lg:leading-[36px] lg:w-[845px] mx-auto w-full"
+            data-aos="fade-up"
+            data-aos-delay="1600"
+          >
             Every log you make fuels smarter advice everywhere else. That's how
             niiGma turns isolated data points into actionable, whole-person
             insights
           </p>
-        </div>
+        </div>{' '}
       </div>
-      <div className=" absolute top-0 right-0">
+      <div
+        className=" absolute top-0 right-0"
+        data-aos="fade-left"
+        data-aos-delay="200"
+      >
         <Image
           src="/img/feature/effect1.png"
           alt="Feature Section Background"
@@ -267,7 +373,11 @@ export default function FeaturesSection() {
           className="w-full h-auto object-cover"
         />
       </div>
-      <div className=" absolute top-0 right-0 left-0 bottom-0 h-full flex items-center justify-center">
+      <div
+        className=" absolute top-0 right-0 left-0 bottom-0 h-full flex items-center justify-center"
+        data-aos="zoom-in"
+        data-aos-delay="300"
+      >
         <Image
           src="/img/feature/effect2.png"
           alt="Feature Section Background"
