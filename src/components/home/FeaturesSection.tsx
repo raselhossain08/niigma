@@ -37,12 +37,10 @@ const steps = [
     title: 'CalTraker',
     subtitle: 'Suggests iron rich food',
     icon: (
-      <Image
+      <img
         src="/icons/feature3.svg"
         alt="Feature 1"
-        width={41}
-        height={41}
-        className="w-[21.14px] lg:w-[41px] h-auto "
+        className="w-[21.14px] lg:w-[41px] h-auto md:object-contain rounded-[4px]  md:rounded-[10px]"
       />
     ),
     bgColor: 'bg-blue-50',
@@ -95,7 +93,7 @@ export default function FeaturesSection() {
         </div>
         <div className="flex items-center justify-between flex-wrap lg:flex-nowrap">
           <div
-            className="w-full lg:w-[501px] py-8 lg:py-0 flex justify-center flex-col"
+            className="w-[279px] sm:w-full lg:w-[501px] py-8 lg:py-0 flex justify-center flex-col mx-auto"
             data-aos="fade-right"
             data-aos-delay="400"
           >
@@ -105,7 +103,7 @@ export default function FeaturesSection() {
                 alt="Feature Image"
                 width={245.94}
                 height={205}
-                className="w-[245.94px]"
+                className="w-[120px] h-auto sm:w-[245.94px]"
                 data-aos="fade-up"
                 data-aos-delay="500"
               />
@@ -114,14 +112,14 @@ export default function FeaturesSection() {
                 alt="Feature Image"
                 width={225.06}
                 height={205}
-                className="w-[225.06] h-auto"
+                className="w-[120px] h-auto sm:w-[225.06] "
                 data-aos="fade-up"
                 data-aos-delay="600"
               />
             </div>
-            <div className="  flex items-center justify-center ps-12">
+            <div className="  flex items-center justify-center ps-6 sm:ps-12">
               <p
-                className="text-center text-[#0BA7E3] font-bold text-26"
+                className="text-center text-[#0BA7E3] font-bold text-20 sm:text-26"
                 data-aos="zoom-in"
                 data-aos-delay="700"
               >
@@ -134,16 +132,16 @@ export default function FeaturesSection() {
                 alt="Feature Image"
                 width={268.94}
                 height={205}
-                className="w-[268.94] h-auto"
-                data-aos="fade-up"
-                data-aos-delay="800"
+                className="w-[140px]  sm:w-[268.94] h-auto"
+                // data-aos="fade-up"
+                // data-aos-delay="800"
               />
               <Image
                 src="/img/feature/6.svg"
                 alt="Feature Image"
                 width={222}
                 height={205}
-                className="w-[222px] h-auto"
+                className="w-[120px]  sm:w-[222px] h-auto"
                 data-aos="fade-up"
                 data-aos-delay="900"
               />

@@ -20,7 +20,7 @@ export default function TallyButton() {
       data-tally-emoji-text="👋"
       data-tally-emoji-animation="wave"
       data-tally-form-events-forwarding="1"
-      className="h-[56px] font-semibold text-16 rounded-full bg-cs1 hover:bg-cs1 transition-colors duration-200 text-white w-full md:w-[152px]"
+      className="h-[56px] font-semibold text-16 rounded-full bg-cs1 hover:bg-cs1 transition-colors duration-200 text-white w-[152px]"
     >
       Join Beta
     </button>

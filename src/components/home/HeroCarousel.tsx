@@ -52,12 +52,10 @@ export function HeroCarousel() {
             className="w-full flex justify-center lg:justify-end  lg:pr-20"
           >
             <div className="p-1 relative">
-              <Image
-                src={item.mainImage.src}
-                width={item.mainImage.width}
-                height={item.mainImage.height}
+              <img
+                src={typeof item.mainImage.src === 'string' ? item.mainImage.src : item.mainImage.src.src}
                 alt={item.mainImage.alt}
-                className={`w-[227.35px] h-[353px] sm:w-[394.04px] sm:h-[611.81px] transition-opacity duration-300 ${
+                className={`w-[227.35px] h-auto sm:w-[394.04px] sm:h-[611.81px] object-contain transition-opacity duration-300 ${
                   activeIndex === index ? 'opacity-100' : 'opacity-0'
                 }`}
               />

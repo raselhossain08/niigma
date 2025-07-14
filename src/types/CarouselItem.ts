@@ -6,8 +6,6 @@ export interface CarouselItemData {
   id: number;
   mainImage: {
     src: string | StaticImageData;
-    width: number;
-    height: number;
     alt: string;
     left?: string;
     right?: string;
@@ -66,9 +64,8 @@ export const carouselItemData: CarouselItemData[] = [
     id: 0,
     mainImage: {
       src: '/img/hero/1.png',
-      width: 394.04,
-      height: 611.81,
       alt: '',
+      
     },
     topLeftImage: {
       src: '/img/hero/slide/1.svg',
@@ -111,8 +108,6 @@ export const carouselItemData: CarouselItemData[] = [
     id: 1,
     mainImage: {
       src: '/img/hero/2.png',
-      width: 394.04,
-      height: 611.81,
       alt: '',
     },
     topLeftImage: {
@@ -156,8 +151,6 @@ export const carouselItemData: CarouselItemData[] = [
     id: 2,
     mainImage: {
       src: '/img/hero/3.png',
-      width: 394.04,
-      height: 611.81,
       alt: '',
     },
     topLeftImage: {
@@ -201,8 +194,6 @@ export const carouselItemData: CarouselItemData[] = [
     id: 3,
     mainImage: {
       src: '/img/hero/4.png',
-      width: 394.04,
-      height: 611.81,
       alt: '',
     },
     topLeftImage: {
