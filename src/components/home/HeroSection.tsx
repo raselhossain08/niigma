@@ -14,7 +14,7 @@ export function HeroSection() {
   return (
     <section className="relative " id="home">
       <div className="w-full lg:w-[1240px] mx-auto px-4 lg:px-0">
-        <div className="flex items-center justify-between py-10 sm:py-20 flex-wrap lg:flex-nowrap">
+        <div className="flex items-center justify-between py-10 sm:py-20 flex-wrap lg:flex-nowrap relative z-20">
           <div
             className="w-full lg:w-[644px]"
             data-aos="fade-right"
@@ -68,7 +68,7 @@ export function HeroSection() {
             </p>
 
             <div
-              className="flex items-center space-x-3 my-10"
+              className="flex items-center space-x-3 my-10 "
               data-aos="fade-up"
               data-aos-delay="500"
             >

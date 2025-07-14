@@ -34,8 +34,8 @@ export function WaitlistModal({ trigger, className }: WaitlistModalProps) {
         data-tally-emoji-animation="wave"
         data-tally-auto-close="0"
         data-tally-form-events-forwarding="1"
-        className={`w-[152px] h-[56px] font-semibold text-16 rounded-full border-cs1 text-cs1 hover:bg-blue-50 transition-colors duration-200 ${className || ''}`}
-        variant='outline'
+        className={`min-w-[152px] sm:w-[152px] h-[56px] font-semibold text-16 rounded-full border-cs1 text-cs1 hover:bg-blue-50 transition-colors duration-200 ${className || ''}`}
+        variant="outline"
       >
         Join Waitlist
       </Button>

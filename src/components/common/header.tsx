@@ -74,8 +74,8 @@ export function Header() {
 
         {/* Desktop Buttons */}
         <div className="hidden lg:flex items-center space-x-3">
-          <WaitlistModal />
-          <EarlyAccessModal />
+          <WaitlistModal className="w-full" />
+          <EarlyAccessModal className="w-full" />
         </div>
 
         {/* Mobile Menu Trigger */}
