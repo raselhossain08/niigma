@@ -63,7 +63,7 @@ export function HeroCarousel() {
                 alt={item.mainImage.alt}
                 className={`w-[227.35px] h-auto sm:w-[394.04px] sm:h-[611.81px] object-contain transition-opacity duration-300 ${
                   activeIndex === index ? 'opacity-100' : 'opacity-0'
-                  }`}
+                }`}
                 quality={100}
               />
 
@@ -80,6 +80,7 @@ export function HeroCarousel() {
                   <Image
                     {...item.topLeftImage}
                     className={`${item.topLeftImage.cls}`}
+                    quality={100}
                   />
                 </div>
               )}
@@ -97,6 +98,7 @@ export function HeroCarousel() {
                   <Image
                     {...item.bottomRightImage}
                     className={`${item.bottomRightImage.cls}`}
+                    quality={100}
                   />
                 </div>
               )}

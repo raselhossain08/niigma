@@ -13,6 +13,7 @@ const steps = [
         width={41}
         height={41}
         className="w-[21.14px] lg:w-[41px] h-auto "
+        quality={100}
       />
     ),
     bgColor: 'bg-red-50',
@@ -28,6 +29,7 @@ const steps = [
         width={41}
         height={41}
         className="w-[21.14px] lg:w-[41px] h-auto "
+        quality={100}
       />
     ),
     bgColor: 'bg-green-50',
@@ -56,6 +58,7 @@ const steps = [
         width={41}
         height={41}
         className="w-[21.14px] lg:w-[41px] h-auto "
+        quality={100}
       />
     ),
     bgColor: 'bg-orange-50',
@@ -233,7 +236,9 @@ export default function FeaturesSection() {
                   </p>
                   <p className="font-inter font-[600] text-[9.86px] lg:text-18">
                     Current Phase:
-                    <span className="text-black ps-1 font-medium">Late luteal</span>
+                    <span className="text-black ps-1 font-medium">
+                      Late luteal
+                    </span>
                   </p>
                 </div>
                 <div
@@ -256,6 +261,7 @@ export default function FeaturesSection() {
                   className="mt-2 h-[25px] lg:h-[34px]  last:h-[54px] my-6 "
                   data-aos="fade-right"
                   data-aos-delay="900"
+                  quality={100}
                 />
 
                 <div
@@ -278,6 +284,7 @@ export default function FeaturesSection() {
                   className="my-5 h-[25px] lg:h-[34px]  last:h-[54px]"
                   data-aos="fade-right"
                   data-aos-delay="1000"
+                  quality={100}
                 />
 
                 <div
@@ -293,6 +300,7 @@ export default function FeaturesSection() {
                     className="mt-2 w-[41.08px] h-auto lg:w-[75] lg:h-[75px]"
                     data-aos="zoom-in"
                     data-aos-delay="1200"
+                    quality={100}
                   />
                   <div
                     className=" w-[240px]"
@@ -315,6 +323,7 @@ export default function FeaturesSection() {
                   className="mt-5 mb-5 lg:my-5 h-[25px] lg:h-[34px]"
                   data-aos="fade-right"
                   data-aos-delay="1300"
+                  quality={100}
                 />
                 <div
                   className=" flex items-center space-x-4 w-full"
@@ -329,6 +338,7 @@ export default function FeaturesSection() {
                     className="mt-2 h-[32px]"
                     data-aos="zoom-in"
                     data-aos-delay="1500"
+                    quality={100}
                   />
                   <div
                     className=" w-[240px]"
@@ -371,6 +381,7 @@ export default function FeaturesSection() {
           width={913}
           height={913}
           className="w-full h-auto object-cover"
+          quality={100}
         />
       </div>
       <div
@@ -384,6 +395,7 @@ export default function FeaturesSection() {
           width={692}
           height={692}
           className="w-full h-auto object-cover"
+          quality={100}
         />
       </div>
     </div>
