@@ -11,6 +11,8 @@ export interface CarouselItemData {
     right?: string;
     bottom?: string;
     top?: string;
+    w?: number;
+    h?: number;
   };
   topLeftImage?: {
     src: string | StaticImageData;
@@ -65,7 +67,8 @@ export const carouselItemData: CarouselItemData[] = [
     mainImage: {
       src: '/img/hero/1.png',
       alt: '',
-      
+      w: 394.04,
+      h: 611,
     },
     topLeftImage: {
       src: '/img/hero/slide/1.svg',
@@ -74,7 +77,7 @@ export const carouselItemData: CarouselItemData[] = [
       alt: '',
       top: 'top-12 sm:top-20',
       left: ' left-[-60px] sm:-left-[80px]',
-      cls: 'w-[150px] h-auto sm:w-[221.61px] ', 
+      cls: 'w-[150px] h-auto sm:w-[221.61px] ',
     },
     bottomRightImage: {
       src: '/img/hero/slide/2.svg',
@@ -83,7 +86,7 @@ export const carouselItemData: CarouselItemData[] = [
       alt: '',
       bottom: 'bottom-[30px] sm:bottom-[50px]',
       right: 'right-[-50px] sm:right-[-50px] ',
-      cls: 'w-[150px] h-auto sm:w-[221.61px] ', 
+      cls: 'w-[150px] h-auto sm:w-[221.61px] ',
     },
     topLeftArrow: {
       src: '/img/hero/arrowLeft.svg',
@@ -109,6 +112,8 @@ export const carouselItemData: CarouselItemData[] = [
     mainImage: {
       src: '/img/hero/2.png',
       alt: '',
+      w: 394.04,
+      h: 611,
     },
     topLeftImage: {
       src: '/img/hero/slide/3.svg',
@@ -117,7 +122,7 @@ export const carouselItemData: CarouselItemData[] = [
       alt: '',
       top: 'top-12 sm:top-20',
       left: ' left-[-60px] sm:-left-[80px]',
-      cls: 'w-[150px] h-auto sm:w-[221.61px] ', 
+      cls: 'w-[150px] h-auto sm:w-[221.61px] ',
     },
     bottomRightImage: {
       src: '/img/hero/slide/4.svg',
@@ -126,7 +131,7 @@ export const carouselItemData: CarouselItemData[] = [
       alt: '',
       bottom: 'bottom-[30px] sm:bottom-[50px]',
       right: 'right-[-50px] sm:right-[-50px] ',
-      cls: 'w-[150px] h-auto sm:w-[221.61px] ', 
+      cls: 'w-[150px] h-auto sm:w-[221.61px] ',
     },
     topLeftArrow: {
       src: '/img/hero/arrowLeft.svg',
@@ -152,6 +157,8 @@ export const carouselItemData: CarouselItemData[] = [
     mainImage: {
       src: '/img/hero/3.png',
       alt: '',
+      w: 394.04,
+      h: 611,
     },
     topLeftImage: {
       src: '/img/hero/slide/5.svg',
@@ -160,7 +167,7 @@ export const carouselItemData: CarouselItemData[] = [
       alt: '',
       top: 'top-12 sm:top-20',
       left: 'left-[-60px] sm:-left-[80px]',
-      cls: 'w-[150px] h-auto sm:w-[221.61px] ', 
+      cls: 'w-[150px] h-auto sm:w-[221.61px] ',
     },
     bottomRightImage: {
       src: '/img/hero/slide/6.svg',
@@ -169,7 +176,7 @@ export const carouselItemData: CarouselItemData[] = [
       alt: '',
       bottom: 'bottom-[30px] sm:bottom-[50px]',
       right: 'right-[-50px] sm:right-[-50px] ',
-      cls: 'w-[150px] h-auto sm:w-[221.61px] ', 
+      cls: 'w-[150px] h-auto sm:w-[221.61px] ',
     },
     topLeftArrow: {
       src: '/img/hero/arrowLeft.svg',
@@ -195,6 +202,8 @@ export const carouselItemData: CarouselItemData[] = [
     mainImage: {
       src: '/img/hero/4.png',
       alt: '',
+      w: 394.04,
+      h: 611,
     },
     topLeftImage: {
       src: '/img/hero/slide/7.svg',
@@ -203,7 +212,7 @@ export const carouselItemData: CarouselItemData[] = [
       alt: '',
       top: 'top-12 sm:top-20',
       left: ' left-[-60px] sm:-left-[80px]',
-      cls: 'w-[150px] h-auto sm:w-[221.61px] ', 
+      cls: 'w-[150px] h-auto sm:w-[221.61px] ',
     },
     bottomRightImage: {
       src: '/img/hero/slide/8.svg',
@@ -212,7 +221,7 @@ export const carouselItemData: CarouselItemData[] = [
       alt: '',
       bottom: 'bottom-[30px] sm:bottom-[50px]',
       right: 'right-[-50px] sm:right-[-50px] ',
-      cls: 'w-[150px] h-auto sm:w-[221.61px] ', 
+      cls: 'w-[150px] h-auto sm:w-[221.61px] ',
     },
     topLeftArrow: {
       src: '/img/hero/arrowLeft.svg',

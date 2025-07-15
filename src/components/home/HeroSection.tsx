@@ -32,6 +32,7 @@ export function HeroSection() {
                     width={32}
                     height={32}
                     alt=""
+                    quality={100}
                   />
                 </div>
                 <div className="w-7 h-7 bg-[#D9D9D9] rounded-full border border-white">

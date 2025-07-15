@@ -106,15 +106,17 @@ export default function FeaturesSection() {
                 className="w-[120px] h-auto sm:w-[245.94px]"
                 data-aos="fade-up"
                 data-aos-delay="500"
+                quality={100}
               />
               <Image
                 src="/img/feature/4.svg"
                 alt="Feature Image"
                 width={225.06}
                 height={205}
-                className="w-[120px] h-auto sm:w-[225.06] "
+                className="w-[120px] h-auto sm:w-[225.06px] "
                 data-aos="fade-up"
                 data-aos-delay="600"
+                quality={100}
               />
             </div>
             <div className="  flex items-center justify-center ps-6 sm:ps-12">
@@ -132,9 +134,8 @@ export default function FeaturesSection() {
                 alt="Feature Image"
                 width={268.94}
                 height={205}
-                className="w-[140px]  sm:w-[268.94] h-auto"
-                // data-aos="fade-up"
-                // data-aos-delay="800"
+                className="w-[140px]  sm:w-[268.94px] h-auto"
+                quality={100}
               />
               <Image
                 src="/img/feature/6.svg"
@@ -144,6 +145,7 @@ export default function FeaturesSection() {
                 className="w-[120px]  sm:w-[222px] h-auto"
                 data-aos="fade-up"
                 data-aos-delay="900"
+                quality={100}
               />
             </div>
           </div>

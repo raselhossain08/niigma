@@ -26,7 +26,7 @@ export function HeroCarousel() {
     if (!api) return;
     setActiveIndex(api.selectedScrollSnap());
     setIsAnimating(true);
-    setTimeout(() => setIsAnimating(false), 600); 
+    setTimeout(() => setIsAnimating(false), 600);
   }, []);
 
   return (
@@ -52,12 +52,19 @@ export function HeroCarousel() {
             className="w-full flex justify-center lg:justify-end  lg:pr-20"
           >
             <div className="p-1 relative">
-              <img
-                src={typeof item.mainImage.src === 'string' ? item.mainImage.src : item.mainImage.src.src}
+              <Image
+                src={
+                  typeof item.mainImage.src === 'string'
+                    ? item.mainImage.src
+                    : item.mainImage.src.src
+                }
+                height={item.mainImage.h || 611}
+                width={item.mainImage.w || 394.04}
                 alt={item.mainImage.alt}
                 className={`w-[227.35px] h-auto sm:w-[394.04px] sm:h-[611.81px] object-contain transition-opacity duration-300 ${
                   activeIndex === index ? 'opacity-100' : 'opacity-0'
-                }`}
+                  }`}
+                quality={100}
               />
 
               {item.topLeftImage && (

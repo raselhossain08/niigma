@@ -1,19 +1,19 @@
-"use client"
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect } from 'react';
 import { EarlyAccessModal } from '../common/EarlyAccessModal';
 
 export default function Trivia() {
-    useEffect(() => {
-      if (!document.querySelector('script[src*="tally.so/widgets/embed.js"]')) {
-        const script = document.createElement('script');
-        script.src = 'https://tally.so/widgets/embed.js';
-        script.async = true;
-        document.body.appendChild(script);
-      }
-    }, []);
-  
+  useEffect(() => {
+    if (!document.querySelector('script[src*="tally.so/widgets/embed.js"]')) {
+      const script = document.createElement('script');
+      script.src = 'https://tally.so/widgets/embed.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   return (
     <div className="pt-16" id="trivia">
       <div className="w-full lg:w-[1240px] mx-auto relative z-10 px-5 lg:px-0">
@@ -28,6 +28,7 @@ export default function Trivia() {
               width={536.07}
               height={659.87}
               alt="Trivia"
+              quality={100}
             />
           </div>
           <div

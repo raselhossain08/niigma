@@ -20,7 +20,7 @@ export default function WhyNiigma() {
           The Power of Unified Health Intelligence
         </h3>
         <div className="flex items-center py-10 lg:flex-row flex-col">
-          <img
+          <Image
             src="/img/why/1.svg"
             width={450.81}
             height={365.49}
@@ -28,20 +28,30 @@ export default function WhyNiigma() {
             className="relative z-10"
             data-aos="fade-right"
             data-aos-delay="300"
+            priority
+            quality={100}
           />
-          <img
+          <Image
             src="/img/why/2.svg"
+            width={322}
+            height={322}
             alt=""
             className=" rotate-90 lg:rotate-0 relative top-20 lg:top-0 lg:-left-10 w-[322px] h-auto"
             data-aos="zoom-in"
             data-aos-delay="500"
+            priority
+            quality={100}
           />
-          <img
+          <Image
             src="/img/why/3.png"
+            width={380}
+            height={380}
             alt=""
             className="mt-44 lg:mt-0 w-[380.1px] h-auto object-contain"
             data-aos="fade-left"
             data-aos-delay="400"
+            priority
+            quality={100}
           />
         </div>
         <div className="flex w-full lg:w-[1107px] mx-auto items-center justify-center">
