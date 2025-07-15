@@ -233,7 +233,7 @@ export default function FeaturesSection() {
                   </p>
                   <p className="font-inter font-[600] text-[9.86px] lg:text-18">
                     Current Phase:
-                    <span className="text-black">Late luteal</span>
+                    <span className="text-black ps-1 font-medium">Late luteal</span>
                   </p>
                 </div>
                 <div
