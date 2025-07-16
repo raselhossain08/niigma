@@ -21,7 +21,7 @@ const steps = [
   {
     step: 'STEP 2',
     title: 'MoodMana',
-    subtitle: 'Logs Low energy+irrit',
+    subtitle: 'Logs Low energy+Irritation ',
     icon: (
       <Image
         src="/icons/feature2.svg"
@@ -198,7 +198,7 @@ export default function FeaturesSection() {
                               {step.title}
                             </p>
                             {step.subtitle && (
-                              <p className="text-[#1F1F1F] font-inter  text-[8.22px] lg:text-16 lg:leading-[24px] font-normal">
+                              <p className="text-[#1F1F1F] font-inter  text-[8.22px] lg:text-14 lg:leading-[24px] font-normal">
                                 {step.subtitle}
                               </p>
                             )}

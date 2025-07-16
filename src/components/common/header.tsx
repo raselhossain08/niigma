@@ -18,7 +18,6 @@ const navItems = [
   { href: '/#features', label: 'Features' },
   { href: '/#corporate', label: 'Corporate' },
   { href: '/terms-and-conditions', label: 'Terms and Conditions' },
-  { href: '/blog', label: 'Blog' },
 ];
 
 const handleSmoothScroll = (
