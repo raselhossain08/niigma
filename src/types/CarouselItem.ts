@@ -206,7 +206,7 @@ export const carouselItemData: CarouselItemData[] = [
       h: 611,
     },
     topLeftImage: {
-      src: '/img/hero/slide/7.png',
+      src: '/img/hero/7.png',
       width: 221.61,
       height: 78,
       alt: '',
@@ -251,7 +251,7 @@ export const carouselItemData: CarouselItemData[] = [
       h: 611,
     },
     topLeftImage: {
-      src: '/img/hero/slide/8.png',
+      src: '/img/hero/8.png',
       width: 221.61,
       height: 78,
       alt: '',
