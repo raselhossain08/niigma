@@ -79,7 +79,7 @@ export function HeroCarousel() {
                 >
                   <Image
                     {...item.topLeftImage}
-                    className={`${item.topLeftImage.cls}`}
+                    className={`${item.topLeftImage.cls} h-auto`}
                     quality={100}
                   />
                 </div>
@@ -97,7 +97,7 @@ export function HeroCarousel() {
                 >
                   <Image
                     {...item.bottomRightImage}
-                    className={`${item.bottomRightImage.cls}`}
+                    className={`${item.bottomRightImage.cls} h-auto`}
                     quality={100}
                   />
                 </div>
