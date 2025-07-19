@@ -260,7 +260,7 @@ export const carouselItemData: CarouselItemData[] = [
       cls: 'w-[150px] h-auto sm:w-[221.61px] ',
     },
     bottomRightImage: {
-      src: '/img/hero/slide/10.svg',
+      src: '/img/hero/9.png',
       width: 221.61,
       height: 78,
       alt: '',
